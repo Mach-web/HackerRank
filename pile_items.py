@@ -5,7 +5,7 @@ import sys
 
 def pile_items(length, arr):
     for _ in range(0, length):
-        if length <= 2:
+        if len(arr) <= 2:
             return 'Yes'
             break
         if arr[-1] > arr[0]:
@@ -15,7 +15,6 @@ def pile_items(length, arr):
                 break
             else:
             # remove the last element and reduce the length by 1
-                length -= 1
                 arr.pop(-1)
 
         else:
@@ -23,7 +22,6 @@ def pile_items(length, arr):
                 return 'No'
                 break
             else:
-                length -= 1
                 arr.pop(0)
 
 
