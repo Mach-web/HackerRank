@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/challenges/py-check-subset/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+"""
 def find_subset(lenA, A, lenB, B):
     myDict = {}
     for i in B:
