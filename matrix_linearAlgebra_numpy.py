@@ -4,7 +4,6 @@ Link to the problem:
 https://www.hackerrank.com/challenges/np-linear-algebra/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
 '''
 import numpy as np
-
 N = int(input())
 # instantiate an empty array
 matrix = np.empty((N, N))
