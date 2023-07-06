@@ -6,4 +6,6 @@ if __name__ == "__main__":
     len_french = int(input())
     french = set(input().split())
     # perform a union and output the results
-    print(len(english.union(french)))
+    # print(len(english.union(french)))
+    print(len(english | french))
+
