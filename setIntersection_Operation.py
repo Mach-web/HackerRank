@@ -6,5 +6,5 @@ if __name__ == "__main__":
     len_french = int(input())
     french = set(input().split())
     # perform an intersection and output the results
-    print(len(english.intersection(french)))
-    # print(len(english & french))
+    # print(len(english.intersection(french)))
+    print(len(english & french))
