@@ -6,7 +6,7 @@ import re
 # line = input()
 line = 'aa && as & dnj &&& bhjdc&&&&||adsd|cdo|||mkd||||gty ||'
 and_regex = re.compile(r'(?<= )&&(?= )')
-or_regex = re.compile(r"(?<= )\|\|(?= )")
+or_regex = re.compile(r'(?<= )\|\|(?= )')
 # line = re.sub(and_regex, 'and', line)
 line = re.sub(or_regex, 'or', line)
 print(line)
