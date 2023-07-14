@@ -1,15 +1,16 @@
+'''https://www.hackerrank.com/challenges/re-sub-regex-substitution/problem?isFullScreen=true'''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import re
 
-# input_data = int(input())
-# for N in range(input_data):
-# line = input()
-line = 'aa && as & dnj &&& bhjdc&&&&||adsd|cdo|||mkd||||gty ||'
+input_data = int(input())
 and_regex = re.compile(r'(?<= )&&(?= )')
-or_regex = re.compile(r'(?<= )\|\|(?= )')
-# line = re.sub(and_regex, 'and', line)
-line = re.sub(or_regex, 'or', line)
-print(line)
+or_regex = re.compile(r'(?<=\s)\|\|(?=\s)')
+
+for N in range(input_data):
+    lines = input()
+    lines = re.sub(and_regex, 'and', lines)
+    lines = re.sub(or_regex, 'or', lines)
+    print(lines)
 
 
 
