@@ -23,5 +23,5 @@ if __name__ == "__main__":
     MBC = math.asin(MBC) * 180 * 7 / 22
     # round off to nearest integer
     MBC = round(MBC)
-    # the character unicode for degress is 176
+    # the character unicode for degrees is 176
     print(f'{MBC}{chr(176)}')
