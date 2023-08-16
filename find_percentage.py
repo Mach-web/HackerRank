@@ -6,6 +6,7 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
+
     scores = student_marks[query_name]
     sum_scores = 0
     length = 0
