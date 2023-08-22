@@ -5,7 +5,9 @@ if __name__ == '__main__':
     for _ in range(N):
         inputs = input()
         inputs = inputs.split()
+        # Place the inputs into a list
         if len(inputs) == 3:
+            # Use __getattribute__ to input a variable as a function
             myList.__getattribute__(inputs[0])(int(inputs[1]), int(inputs[2]))
         elif len(inputs) == 2:
             myList.__getattribute__(inputs[0])(int(inputs[1]))
