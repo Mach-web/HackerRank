@@ -1,4 +1,4 @@
-import importlib
+'''https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true'''
 if __name__ == '__main__':
     N = int(input())
     myList = []
@@ -14,5 +14,5 @@ if __name__ == '__main__':
         elif inputs[0] == "print":
             print(myList)
         else:
-            myList.__getattribute__(inputs[0])
+            myList.__getattribute__(inputs[0])()
 
