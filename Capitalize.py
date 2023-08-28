@@ -1,4 +1,6 @@
-"""https://www.hackerrank.com/challenges/capitalize/problem?isFullScreen=true"""
+"""
+https://www.hackerrank.com/challenges/capitalize/problem?isFullScreen=true
+"""
 def solve(s):
     # print(s.split(" "))
     capitalized_s = []
