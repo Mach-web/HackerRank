@@ -1,4 +1,6 @@
-"""https://www.hackerrank.com/challenges/text-wrap/problem?isFullScreen=true"""
+"""
+https://www.hackerrank.com/challenges/text-wrap/problem?isFullScreen=true
+"""
 import textwrap
 
 def wrap(string, max_width):
