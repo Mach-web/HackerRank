@@ -9,21 +9,7 @@
 # b = int(val[1])
 # if b == 0:
 #     raise "Error found"
-def convert_to_hexa(s):
-    if s == '10':
-        return "A"
-    elif s == '11':
-        return "B"
-    elif s == '12':
-        return "C"
-    elif s == '13':
-        return "D"
-    elif s == '14':
-        return "E"
-    elif s == '15':
-        return "F"
-    else:
-        return s
+
 def octal(number):
     octal = []
     while number != 0:
@@ -31,9 +17,8 @@ def octal(number):
         number = number // 16
     octal.reverse()
     octal = list(map(lambda x: "A" if x == "10" else "B" if x == "11" else "C" if x == "12" else "D" if x == "13" else "E" if x == "14" else "F" if x == "15" else x, octal))
-    print(octal)
+    return "".join(octal)
 
-octal(16)
-print(14 // 16)
+
 
 
