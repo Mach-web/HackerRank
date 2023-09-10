@@ -10,14 +10,15 @@
 # if b == 0:
 #     raise "Error found"
 
-def octal(number):
-    octal = []
+def hexa(number):
+    hexa = []
     while number != 0:
-        octal.append(str(number % 16))
+        hexa.append(str(number % 16))
         number = number // 16
-    octal.reverse()
-    octal = list(map(lambda x: "A" if x == "10" else "B" if x == "11" else "C" if x == "12" else "D" if x == "13" else "E" if x == "14" else "F" if x == "15" else x, octal))
-    return "".join(octal)
+    hexa.reverse()
+    hexa = list(map(lambda x: "A" if x == "10" else "B" if x == "11" else "C" if x == "12" else "D" if x == "13" else "E" if x == "14" else "F" if x == "15" else x, hexa))
+    return "".join(hexa)
+
 
 
 
