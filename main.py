@@ -9,12 +9,14 @@
 # b = int(val[1])
 # if b == 0:
 #     raise "Error found"
-# print(a/b)
 
-def decimal(number):
-    binary = []
+print(2//8)
+print(2%8)
+def octal(number):
+    octal = []
     while number != 0:
-        binary.append(str(number%2))
-        number = number//2
-    binary.reverse()
-    return ''.join(binary)
+        octal.append(str(number % 8))
+        number = number // 8
+    octal.reverse()
+    return ''.join(octal)
+print(octal(14))
