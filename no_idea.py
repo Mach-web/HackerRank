@@ -11,6 +11,5 @@ if __name__ == "__main__":
             happiness += 1
         elif i in arr_B:
             happiness -= 1
-        
     print(happiness)
     
